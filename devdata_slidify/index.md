@@ -23,12 +23,15 @@ Application: mtcars Scatterplot Matrix Generator
 
 ## The Concept
 
-```{r echo=TRUE}
+
+```r
 library(datasets)
 data(mtcars)
 pairs(~ mpg + wt + hp + disp,data=mtcars,
       main="Pairwise plots of mtcars data")
 ```
+
+![plot of chunk unnamed-chunk-1](assets/fig/unnamed-chunk-1-1.png) 
 
 
 --- 
