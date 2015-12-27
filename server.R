@@ -33,4 +33,11 @@ shinyServer(function(input,output) {
                }
  
           })
+          output$text2 <- renderText({
+               if (length(input$indepVars) >= 2) "Summary Statistics"
+          })
+          output$table1 <- renderTable({
+               indepVars <- as.numeric(input$indepVars)
+               if(length(input$indepVars) >= 2) summary(mtcars[,indepVars])
+          })
 })

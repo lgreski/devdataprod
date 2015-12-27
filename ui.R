@@ -25,6 +25,10 @@ mainPanel(
      textOutput("text1"),
      br(),
      br(),
-     plotOutput("plot1")
+     plotOutput("plot1"),
+     br(),
+     tags$h2(textOutput("text2")),
+     br(),
+     tableOutput("table1")
 )     
 ))
